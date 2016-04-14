@@ -1,0 +1,166 @@
+<!doctype html>
+<html ng-app="assign_8">
+
+  <head>
+  </head>
+
+  <body ng-controller="myCtrl">
+
+    <div id="firstpageprompt" ng-show="vtrue">
+      <p>Are you a man or a woman?</p>
+    <div>
+      <!-- attempting to do ng-click with two params -->
+      <div><a href="" ng-click= "select('man', 'woman')">Man</a></div>
+      <div><a href="" ng-click= "select('woman', 'man')">Woman</a></div>
+      <div class="submitbutton" ng-show="button1show" ng-click="firstsubmit()">Submit</div>
+    </div>
+    </div>
+
+    <div id="secondpageprompt" ng-show="vtrue2">
+      <p>Which statement best descibes your hair loss?</p>
+      <div>
+        <div>
+          <div><a href="" ng-click= "select2('opt1','opt2','opt3','opt4','opt5','opt6')">I am just beginning to thin.</a></div>
+          <div><a href="" ng-click= "select2('opt2','opt1','opt3','opt4','opt5','opt6')">I am visibly thinning and can see my scalp.</a></div>
+          <div><a href="" ng-click= "select2('opt3','opt2','opt1','opt4','opt5','opt6')">I have extensive hair loss.</a></div>
+          <div><a href="" ng-click= "select2('opt4','opt2','opt3','opt1','opt5','opt6')">I have a full head of hair but my hair is very fine.</a></div>
+          <div><a href="" ng-click= "select2('opt5','opt2','opt3','opt4','opt1','opt6')">I have hair loss in my family and want to hold on to what I have.</a></div>
+          <div><a href="" ng-click= "select2('opt6','opt2','opt3','opt4','opt5','opt1')">I have hair loss due to a medical treatment such as Chemotherapy.</a></div>
+          <div class="submitbutton" ng-show="button2show" ng-click="secondsubmit()">Submit</div>
+        </div>
+    </div>
+  </div>
+
+    <div ng-show="solutions1">
+      <p>Based on your answers, these treatment options are best suited to your needs:</p>
+      <p>(Solutions1)</p>
+      <p ng-click="select3('solu1p1', 'solu2p1', 'solu3p1')">(1) Laser Hair Therapy</p>
+      <p ng-click="select3('solu2p1', 'solu1p1', 'solu3p1')">(2) Revive Procare</p>
+      <p ng-click="select3('solu3p1', 'solu2p1', 'solu1p1')">(3) Scalp Wellness</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu1p1">
+      <p>solution 1 (page 1) </p>
+      <p ng-click="back1()">Go Back</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu2p1">
+      <p>solution 2 (page 1) </p>
+      <p ng-click="back1()">Go Back</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu3p1">
+      <p>solution 3 (page 1) </p>
+      <p ng-click="back1()">Go Back</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solutions2">
+      <p>Based on your answers, these treatment options are best suited to your needs:</p>
+      <p>(Solutions2)</p>
+      <p ng-click="select4('solu1p2', 'solu3p2', 'solu4p2')">opt1 Laser Hair Therapy</p>
+      <p ng-click="select4('solu4p2', 'solu3p2', 'solu1p2')">opt4 Hair Enhancement</p>
+      <p ng-click="select4('solu3p2','solu1p2', 'solu4p2')">opt3 Scalp Wellness</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu1p2">
+            <p>solution 1 (page 2) </p>
+            <p ng-click="back2()">Go back</p>
+            <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu4p2">
+            <p>solution 4 (page 2) </p>
+            <p ng-click="back2()">Go back</p>
+            <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu3p2">
+            <p>solution 3 (page 2) </p>
+            <p ng-click="back2()">Go back</p>
+            <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solutions3">
+      <p>Based on your answers, these treatment options are best suited to your needs:</p>
+      <p>Solutions3</p>
+      <p ng-click="select5()">opt4 Hair Enhancement</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu4p3">
+      <p>solution 4 (page 3) </p>
+      <p ng-click="back3()">Go Back</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solutions4">
+      <p>Based on your answers, these treatment options are best suited to your needs:</p>
+      <p>Solutions4</p>
+      <p ng-click="select6('solu1p4', 'solu2p4','solu4p4', 'solu3p4')">opt1 Laser Hair Therapy</p>
+      <p ng-click="select6('solu2p4', 'solu1p4', 'solu4p4', solu3p4)">opt2 Revive Procare</p>
+      <p ng-click="select6('solu4p4', 'solu2p4', 'solu3p4', 'solu1p4')">opt4 Hair Enhancement</p>
+      <p ng-click="select6('solu3p4', 'solu2p4', 'solu1p4', 'solu4p4')">opt3 Scalp Wellness</p>
+      <p>Start again</p>
+
+    </div>
+
+    <div ng-show="solu1p4">
+      <p>solution 1 (page 4) </p>
+    </div>
+
+    <div ng-show="solu2p4">
+      <p>solution 2 (page 4) </p>
+    </div>
+
+    <div ng-show="solu4p4">
+      <p>solution 4 (page 4) </p>
+    </div>
+
+    <div ng-show="solu3p4">
+      <p>solution 3 (page 4) </p>
+    </div>
+
+    <div ng-show="solutions5">
+      <p>Based on your answers, these treatment options are best suited to your needs:</p>
+      <p>Solutions5</p>
+      <p ng-click="select3('solu5', 'solu1', 'solu2', 'solu3', 'solu4', 'solutions5')">opt5 Wigs and Medical Hair Loss</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+
+    <div ng-show="solu5p5">
+      <p>solution 5 (page 5) </p>
+    </div>
+
+
+    <!-- <div ng-show="solu1">
+      <p>solu1</p>
+      <p>Laser Hair Therapy</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+    <div ng-show="solu2">
+      <p>solu2</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+    <div ng-show="solu3">
+      <p>solu3</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+    <div ng-show="solu4">
+      <p>solu4</p>
+      <p ng-click="reset()">Start again</p>
+    </div>
+    <div ng-show="solu5">
+      <p>solu5</p>
+      <p ng-click="reset()">Start again</p>
+    </div> -->
+  </body>
+
+  <script src="vendor/angular.js" type="text/Javascript"></script>
+  <script src="scripts/app.js" type="text/Javascript"></script>
+
+</html>
