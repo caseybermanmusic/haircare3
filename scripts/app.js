@@ -5,12 +5,13 @@ var app = angular.module("assign_8", []);
 
 app.controller('myCtrl', function($scope) {
 
+  $scope.absolutefirst = true;
   $scope.man = false;
   $scope.woman = false;
   $scope.button1show = false;
   $scope.button2show = false;
 
-  $scope.vtrue = true;
+  $scope.vtrue = false;
   $scope.vtrue2 = false;
 
   $scope.opt1 = false;
@@ -47,6 +48,13 @@ app.controller('myCtrl', function($scope) {
 
 
   // attempting to make function with two params
+
+  $scope.first = function() {
+    $scope.absolutefirst = false;
+    $scope.vtrue = true;
+  };
+
+
   $scope.select = function(gender1, gender2) {
     $scope[gender1] = true;
     $scope[gender2] = false;
@@ -126,8 +134,8 @@ app.controller('myCtrl', function($scope) {
   };
 
   $scope.select5 = function() {
-    $scope.solu4p3 = true;
 
+    $scope.solu4p3 = true;
     $scope.solutions3 = false;
   };
 
@@ -142,7 +150,27 @@ app.controller('myCtrl', function($scope) {
     $scope[c] = false;
     $scope[d] = false;
 
+    $scope.solutions4 = false;
+
     // console.log($scope.solu1p2, $scope.solu2p2, $scope.solu4p2, $scope.solu3p2)
+  };
+
+  $scope.back4 = function() {
+    $scope.solu1p4 = false;
+    $scope.solu2p4 = false;
+    $scope.solu4p4 = false;
+    $scope.solu3p4 = false;
+    $scope.solutions4 = true;
+  };
+
+  $scope.select7 = function() {
+    $scope.solutions5 = false;
+    $scope.solu5p5 = true;
+  };
+
+  $scope.back5 = function() {
+    $scope.solutions5 = true;
+    $scope.solu5p5 = false;
   };
 
   $scope.secondsubmit = function() {
@@ -163,12 +191,14 @@ app.controller('myCtrl', function($scope) {
   };
 
   $scope.reset = function() {
+
+    $scope.absolutefirst = true;
     $scope.man = false;
     $scope.woman = false;
     $scope.button1show = false;
     $scope.button2show = false;
 
-    $scope.vtrue = true;
+    $scope.vtrue = false;
     $scope.vtrue2 = false;
 
     $scope.opt1 = false;

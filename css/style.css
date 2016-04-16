@@ -1,0 +1,301 @@
+@font-face {
+
+	font-family: "head";
+	src: url('../fonts/HelveticaNeueLTPro-MdCn.otf') format("opentype"); 
+}
+
+@font-face {
+
+	font-family: "subhead";
+	src: url('../fonts/HelveticaNeueLTPro-Md 3.otf') format("opentype"); 
+}
+
+body {
+
+	margin: 0;
+	background-image: url('../images/hair_bg.png');
+	background-size: cover;
+
+	
+
+}
+
+
+
+
+.white {
+
+	background-image: none;
+
+
+}
+
+
+
+
+.first {
+
+	background:rgba(0,0,0,.55);
+	color: white;
+	margin-top: 14em;
+	font-family: 'head';
+	padding: 2em 0;
+}
+
+.first h1 {
+
+	font-size: 1.5em;
+	text-align: center;
+	padding: .5em 0 0 0;
+}
+
+.first p {
+
+	font-size: .8em;
+	text-align: center;
+	margin: 2em 5.5em 0 5.5em;
+
+}
+
+.firstpageprompt {
+
+	margin-top: 30%;
+	font-family: 'head';
+
+}
+
+.cool a {
+
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	margin-top: 1em;
+	padding: .5em;
+	background-color: red;
+	margin: 1em 7em 0 7em;
+	border-radius: .2em;
+
+}
+
+.darkred a {
+
+	background-color: #881802 !important;
+}
+
+
+
+.r {
+
+	font-family: 'head';
+	font-size: .8em;
+	text-align: center;
+	background-color: red;
+	padding: .8em;
+
+}
+
+
+.a {
+
+	width: 30%;
+	height: 30%;
+	margin: 4em 9em 2em 8.5em;
+
+}
+
+.selection {
+
+	padding-top: 5em;
+}
+
+.submitbutton {
+
+	color: white;
+}
+
+.firstpageprompt p {
+
+	color: black;
+	font-size: 1.5em;
+}
+
+
+.options a {
+
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: .5em;
+	background-color: red;
+	margin: 1em 2em 0 2em;
+	border-radius: .2em;
+	font-family: 'head';
+	font-size: .8em;
+
+
+}
+
+.options {
+
+	margin-top: 5em;
+}
+
+.options p {
+
+	font-family: 'head';
+	margin-bottom: 2em;
+	color: black;
+}
+
+
+.options2 {
+
+	font-family: 'head';
+	margin: 8em 4em 0em 4em;
+}
+
+.options2 h1 {
+
+	color: black;
+	font-size: 1.1em;
+	margin-bottom: 5em;
+	text-align: center;
+
+}
+
+.options2 p {
+
+	color: white;
+	font-size: 1em;
+	margin-top: 1em;
+	background-color: red;
+	padding: .6em;
+	border-radius: .2em;
+}
+
+.headers {
+
+	font-family: 'head';
+}
+
+.headers p {
+
+	color: white;
+	font-size: 1em;
+	background-color: red;
+	padding: .6em;
+	border-radius: .2em;
+	margin: 1em 6em 1em 6em;
+
+
+}
+
+.headers h2 {
+
+	color: white;
+	font-size: .7em;
+	margin-top: 1em;
+	padding: .6em;
+	margin: 0 1em;
+
+
+}
+
+.headers h1 {
+
+	color: red;
+    font-size: 2em;
+ 	margin: 3em .5em 0em .5em;
+    text-align: left;
+    
+
+
+}
+
+.headers img {
+
+	width: 40%;
+	margin: 1em 7.5em 2em 7.5em;
+}
+
+
+
+.i {
+
+    width: 60%;
+    margin: 3em 8em 3em 3.2em;
+
+
+}
+/*****
+header and footer fixed images
+******/
+
+.fixed,
+.fixed img {
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+}
+
+.footer,
+.footer img {
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+
+
+
+
+.main {
+
+	margin: 14em 0em 10em 0em;
+	background-color: black;
+	background:rgba(0,0,0,.55);
+	color: white;
+	
+}
+
+.main h1, p {
+
+	margin: .3em 0em .3em 0em;
+	text-align: center;
+	
+}
+
+.main h1 {
+
+	font-size: 1.4em;
+	font-family: "head";
+	padding: 1em;
+}
+
+
+.main p {
+
+	font-size: .8em;
+	margin: 0 8em 0 6em;
+	font-family: "head";
+}
+
+
+.main a {
+
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	font-family: "head";
+	font-size: 1em;
+	padding: .5em;
+	margin: 2em 7.8em 2em 7.8em;
+	display: inline-block;
+
+}
+
