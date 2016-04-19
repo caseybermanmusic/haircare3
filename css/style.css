@@ -15,13 +15,108 @@ body {
 	margin: 0;
 	background-image: url('../images/hair_bg.png');
 	background-size: cover;
+	background-position: center bottom;
 
 	
 
 }
 
 
+.headers3 {
 
+	font-family: 'head';
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.headers3 p {
+
+	color: white;
+	font-size: 1em;
+	background-color: red;
+	padding: .6em 1.9em .6em 1.9em;
+	border-radius: .2em;
+	margin: 2em 6em 1em 13em;
+	font-size: 2em;
+
+
+}
+
+.headers3 h2 {
+	color: green;
+	font-size: 2.5em;
+	padding: 1.6em;
+	margin: -1.6em 5.5em;
+	line-height:  1.9em;
+
+}
+
+
+
+.clearfix {
+
+	content: "";
+	display: table;
+	clear: both;
+}
+.headers3 h3 {
+
+	color: black;
+	font-size: 1.5em;
+	padding: 1.6em;
+	margin: -.9em 1em
+
+}
+
+.headers3 h4 {
+
+	color: black;
+	font-size: 1.5em;
+	margin-top: 1em;
+	padding: 1.6em;
+	margin: -3em 13.2em;
+	width: 60%;
+	line-height:  1.5em;
+
+
+}
+
+.headers3 h5 {
+	color: black;
+	font-size: 1.23em;
+	margin-top: 1em;
+	padding: 0em 1.6em;
+	margin: 0em 15.2em;
+	width: 64%;
+	line-height:  1.2em;
+
+}
+
+.headers3 h1 {
+
+	color: grey;
+    font-size: 3em;
+ 	margin: 1.5em 3.5em 0 1.2em;
+    text-align: left;
+    font-family: "subhead";
+    
+
+
+}
+
+.headers3 img {
+
+	width: 30%;
+	float: left;
+	padding: 1em 0em 0 3em;
+	height: 1%;
+}
+
+.one {
+
+	float: left;
+}
 
 .white {
 
@@ -37,22 +132,23 @@ body {
 
 	background:rgba(0,0,0,.55);
 	color: white;
-	margin-top: 14em;
+	margin-top: 30em;
 	font-family: 'head';
 	padding: 2em 0;
 }
 
 .first h1 {
 
-	font-size: 1.5em;
+	font-size: 4em;
 	text-align: center;
 }
 
 .first p {
 
-	font-size: .8em;
+	font-size: 2.1em;
 	text-align: center;
-	margin: 2em 5.5em 0 5.5em;
+	margin: 0em 7.5em 2em 7.5em;
+
 
 }
 
@@ -74,6 +170,7 @@ body {
 	background-color: red;
 	margin: 1em 7em 0 7em;
 	border-radius: .2em;
+	font-size: 2.5em;
 
 }
 
@@ -86,19 +183,19 @@ body {
 
 	background-color: grey;
 	margin: 1em 9em;
-	font-size: .8em;
+	font-size: 2.5em;
 	text-align: center;
-	padding: 1em;
+	padding: .5em 1em;
 	cursor: pointer;
 }
 
 .r {
 
 	font-family: 'head';
-	font-size: .8em;
+	font-size: 2.5em;
 	text-align: center;
 	background-color: red;
-	padding: .8em;
+	padding: 0.5em 1em;
 	cursor: pointer;
 
 }
@@ -120,12 +217,13 @@ body {
 .submitbutton {
 
 	color: white;
+	margin: 8em 23em;
 }
 
 .firstpageprompt p {
 
 	color: black;
-	font-size: 1.5em;
+	font-size: 3.5em;
 }
 
 
@@ -140,7 +238,7 @@ body {
 	margin: 1em 2em 0 2em;
 	border-radius: .2em;
 	font-family: 'head';
-	font-size: .8em;
+	font-size: 2em;
 
 
 }
@@ -155,6 +253,7 @@ body {
 	font-family: 'head';
 	margin-bottom: 2em;
 	color: black;
+	font-size: 3em;
 }
 
 
@@ -167,8 +266,8 @@ body {
 .options2 h1 {
 
 	color: black;
-	font-size: 1.1em;
-	margin-bottom: 5em;
+	font-size: 3em;
+	margin-bottom: 3em;
 	text-align: center;
 
 }
@@ -181,6 +280,7 @@ body {
 	background-color: red;
 	padding: .6em;
 	border-radius: .2em;
+	font-size: 3em; 
 }
 
 .headers {
@@ -191,7 +291,7 @@ body {
 .headers p {
 
 	color: white;
-	font-size: 1em;
+	font-size: 2em;
 	background-color: red;
 	padding: .6em;
 	border-radius: .2em;
@@ -203,10 +303,10 @@ body {
 .headers h2 {
 
 	color: black;
-	font-size: .7em;
+	font-size: 1.9em;
 	margin-top: 1em;
 	padding: .6em;
-	margin: 0 1em;
+	margin: 0 .6em;
 
 
 }
@@ -214,7 +314,7 @@ body {
 .headers h1 {
 
 	color: red;
-    font-size: 2em;
+    font-size: 4.5em;
  	margin: 3em .5em 0em .5em;
     text-align: left;
     
@@ -227,7 +327,7 @@ body {
 .headers img {
 
 	width: 40%;
-	margin: 1em 7.5em 2em 7.5em;
+	margin: 3em 6.5em 0em 20.5em;
 }
 
 
@@ -246,7 +346,8 @@ body {
 	background-color: red;
 	padding: .6em 1.9em .6em 1.9em;
 	border-radius: .2em;
-	margin: 2em 9em 0em 9em;
+	margin: 2em 6em 1em 13em;
+	font-size: 2em;
 
 
 }
@@ -254,7 +355,7 @@ body {
 .headers2 h2 {
 
 	color: black;
-	font-size: .7em;
+	font-size: 1.5em;
 	margin-top: 1em;
 	padding: 1.6em;
 	margin: 0 1em;
@@ -267,8 +368,8 @@ body {
 .headers2 h1 {
 
 	color: red;
-    font-size: 2em;
- 	margin: 3em .5em 0em .5em;
+    font-size: 5.5em;
+ 	margin: 2em 1.5em .2em .5em;
     text-align: left;
     
 
@@ -277,9 +378,9 @@ body {
 
 .headers2 img {
 
-	width: 40%;
+	width: 32%;
 	float: left;
-	padding: 1em 0 0 1em;
+	padding: 1em 0em 0 3em;
 	height: 1%;
 }
 
@@ -288,15 +389,25 @@ body {
 
 .i {
 
-    width: 60%;
-    margin: 3em 8em 3em 3.2em;
+    width: 38%;
+    margin: 5em 9em 3em 18em;
 
 
 }
+
+
+.v {
+
+    width: 38%;
+    margin: 1em 9em 3em 20em;
+
+
+}
+
 .h {
 
     width: 60%;
-    margin: 0em 5em 5em 6.2em;
+    margin: 0em 5em 5em 18.5em;
 
 
 }
@@ -307,8 +418,8 @@ body {
 	color: white;
 	background-color: grey;
 	padding: .5em .4em .3em .4em;
-	font-size: 0.8em;
-	margin: -3em 1em 0em 0em;
+	font-size: 2.5em;
+	margin: -2em 1em 0em 0em;
 	text-decoration: none;
 }
 
@@ -318,8 +429,8 @@ body {
 	color: white;
 	background-color: grey;
 	padding: .5em .4em .3em .4em;
-	font-size: 0.8em;
-	margin: 4em 1em 0em 0em;
+	font-size: 1.9em;
+	margin: 1em 1em 0em -2em;
 	text-decoration: none;
 }
 
@@ -337,8 +448,6 @@ header and footer fixed images
 .fixed img {
 
 	width: 100%;
-	position: fixed;
-	top: 0;
 
 }
 
@@ -397,5 +506,51 @@ header and footer fixed images
 	margin: 2em 7.8em 2em 7.8em;
 	display: inline-block;
 
+}
+
+
+
+
+
+
+
+.fixed img {
+
+
+}
+
+
+
+.vid h1 {
+
+	font-size: 4em;
+    font-family: 'head';
+    color: grey;
+    text-align: center;
+}
+
+.vid img {
+
+	width: 15%;
+    height: 40%;
+    margin: auto;
+}
+
+
+
+.x {
+
+	margin: 19em 19em;
+    text-align: center;
+
+}
+
+
+video {
+
+
+
+	width: 100%;
+	height: 30%;
 }
 
