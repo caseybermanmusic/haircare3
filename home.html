@@ -433,7 +433,9 @@
       <img src="images/4.jpg" ng-click="hidevid('myVid4', 'myVid1', 'myVid2', 'myVid3', 'myVid5', 'myVid6')">
       <img src="images/5.jpg" ng-click="hidevid('myVid5', 'myVid1', 'myVid2', 'myVid3', 'myVid4', 'myVid6')">
       <img src="images/6.jpg" ng-click="hidevid('myVid6', 'myVid1', 'myVid2', 'myVid3', 'myVid4', 'myVid5')"> -->
+      <div class="vids">
       <img ng-repeat="img in videodb" ng-src="{{img.poster}}" ng-click="showVid(img)">
+      </div>
       </div>
 
 
@@ -446,6 +448,7 @@
         <img src="images/footer.png">
       </div>
   </body>
+
 
 
   <script src="vendor/angular.js" type="text/Javascript"></script>

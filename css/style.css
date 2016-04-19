@@ -15,7 +15,7 @@ body {
 	margin: 0;
 	background-image: url('../images/hair_bg.png');
 	background-size: cover;
-	background-position: center bottom;
+	background-repeat: no
 
 	
 
@@ -529,11 +529,16 @@ header and footer fixed images
     text-align: center;
 }
 
-.vid img {
+.vids {
+
+	
+    margin: 0em 1em 1em 2em;
+}
+
+.vids img {
 
 	width: 15%;
-    height: 40%;
-    margin: auto;
+	margin: 1em .5em;
 }
 
 
