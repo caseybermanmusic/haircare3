@@ -248,6 +248,12 @@ app.controller('myCtrl', function($scope) {
     $scope.myVid4 = false;
     $scope.myVid5 = false;
     $scope.myVid6 = false;
+
+    var checkclown = document.getElementById("clown");
+
+    if (!checkclown.paused == true) {
+      checkclown.pause();
+    };
   };
 
   $scope.testi = function() {
@@ -257,10 +263,8 @@ app.controller('myCtrl', function($scope) {
     $scope.testimonials = true;
     console.log($scope.testimonials, $scope.solu2p5);
 
-
-    var vid = document.getElementById("myVid1");
+    var vid = document.getElementById("clown");
     vid.play();
-    prevVid = vid;
   };
 
   $scope.videodb = [
@@ -272,35 +276,35 @@ app.controller('myCtrl', function($scope) {
       poster:'images/1.jpg'
     },
     {
-      name:'first video',
+      name:'second video',
       url:'videos/2.mp4',
       // vidKey:'b',
       idName:'myVid2',
       poster:'images/2.jpg'
     },
     {
-      name:'first video',
+      name:'third video',
       url:'videos/3.mp4',
       // vidKey:'c',
       idName:'myVid3',
       poster:'images/3.jpg'
     },
     {
-      name:'first video',
+      name:'fourth video',
       url:'videos/4.mp4',
       // vidKey:'d',
       idName:'myVid4',
       poster:'images/4.jpg'
     },
     {
-      name:'first video',
+      name:'fifth video',
       url:'videos/5.mp4',
       // vidKey:'e',
       idName:'myVid5',
       poster:'images/5.jpg'
     },
     {
-      name:'first video',
+      name:'sixth video',
       url:'videos/6.mp4',
       // vidKey:'f',
       idName:'myVid6',
@@ -316,12 +320,19 @@ app.controller('myCtrl', function($scope) {
 
   $scope.showVid = function(video) {
     $scope.selectedVideo = video;
+    // video.play();
+    var thisElement = document.getElementById("clown");
+    thisElement.onloadeddata = function() {
+      console.log("This is working apparently");
+      thisElement.play();
+    };
+    // var thisElement = document.getElementById(video.idName);
 
-    var thisElement = document.getElementById("selectedVideo");
+    console.log(video);
+    console.log(video.name);
     console.log(thisElement);
-    // var thisElement = video.url;
-    thisElement.play();
-    console.log(thisElement);
+
+    // thisElement.play();
 
     // var thisElement = document.getElementById(val.idName);
     // thisElement.currentTime = 0;
