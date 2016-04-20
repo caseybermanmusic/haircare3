@@ -136,7 +136,7 @@
        </div>
       <p class="r clearfix" ng-click="back1()">Go Back</p>
       <img class="v" src="images/startagain.png" ng-click="reset()"/>
-  
+
 
     </div>
 
@@ -363,19 +363,13 @@
       <p ng-click="select7('solu2p5', 'solu5p5')">Scalp Wellness</p>
 
       <img class="i" src="images/startagain.png" ng-click="reset()"/>
-
     </div>
 
-
-
     <div class="headers" ng-show="solu5p5">
-
       <a class="link" href="#" ng-click="testi()">VIEW TESTIMONIALS</a>
-
       <h1>Wigs and Medical Hair Loss</h1>
       <h2>Wigs can be a beautiful option when you are experiencing temporary hair loss due to any medical condition. Hair and Scalp Wellness is committed to helping you through the entire process from selection, maintaining, and customizing your wig.</h2>
-      <h2>Our styles are in line with the latest trends in fashion as well as being light and comfortable on the scalp. We will assist you in picking a length and color that compliments your face and meets your specific lifestyle needs. We will support you through the hair loss process with tender care and experienced advice. We will teach you how to care for your wig and assist you with any additional accessories you will need such as sleeping caps, fashionable scarves, skin care and makeup to help you look and feel your best.Rest assured a Hair and Scalp Wellness associate will be with you every step of the way. </h2>
-
+      <h2>Our styles are in line with the latest trends in fashion as well as being light and comfortable on the scalp. We will assist you in picking a length and color that compliments your face and meets your specific lifestyle needs. We will support you through the hair loss process with tender care and experienced advice. We will teach you how to care for your wig and assist you with any additional accessories you will need such as sleeping caps, fashionable scarves, skin care and makeup to help you look and feel your best. Rest assured a Hair and Scalp Wellness associate will be with you every step of the way. </h2>
       <img src="images/wigs.jpg">
       <p ng-click="back5()">Go Back</p>
       <img class="i" src="images/startagain.png" ng-click="reset()"/>
@@ -400,59 +394,25 @@
 
 
     <div ng-show="testimonials">
-      <!-- <video controls preload="metadata">
-      <source src="videos/1.mp4" type="video/mp4">
-      <source src="videos/2.mp4" type="video/mp4">
-      <source src="videos/3.mp4" type="video/mp4">
-      <source src="videos/4.mp4" type="video/mp4">
-      <source src="videos/5.mp4" type="video/mp4">
-      <source src="videos/6.mp4" type="video/mp4">
-      </video>
- -->
-      <!-- <div ng-show="myVid1"><video id="myVid1" src="videos/1.mp4" type="video/mp4" controls preload="metadata"></video></div>
-      <div ng-show="myVid2"><video id="myVid2" src="videos/2.mp4" type="video/mp4" controls preload="metadata"></video></div>
-      <video id="myVid3" src="videos/3.mp4" type="video/mp4" controls preload="metadata" ng-show="myVid3"></video>
-      <video id="myVid4" src="videos/4.mp4" type="video/mp4" controls preload="metadata" ng-show="myVid4"></video>
-      <video id="myVid5" src="videos/5.mp4" type="video/mp4" controls preload="metadata" ng-show="myVid5"></video>
-      <video id="myVid6" src="videos/6.mp4" type="video/mp4" controls preload="metadata" ng-show="myVid6"></video> -->
-
-      <div ng-repeat="vid in videodb" ng-show="vid.vidKey === selectedVid">
-        <video id="{{vid.idName}}" ng-src="{{vid.url}}" controls></video>
+      <div>
+        <video id="{{selectedVideo.idName}}" ng-src="{{selectedVideo.url}}" controls></video>
       </div>
 
       <div class="vid">
-
-      <h1> Client Testimonials </h1>
-
-     
-<!--       <img style="margin-left: 2.5em" src="images/1.jpg" ng-click="hidevid('myVid1', 'myVid2', 'myVid3', 'myVid4', 'myVid5', 'myVid6')">
-
-      <img src="images/2.jpg" ng-click="hidevid('myVid2', 'myVid1', 'myVid3', 'myVid4', 'myVid5', 'myVid6')">
-
-      <img src="images/3.jpg" ng-click="hidevid('myVid3', 'myVid1', 'myVid2', 'myVid4', 'myVid5', 'myVid6')">
-      <img src="images/4.jpg" ng-click="hidevid('myVid4', 'myVid1', 'myVid2', 'myVid3', 'myVid5', 'myVid6')">
-      <img src="images/5.jpg" ng-click="hidevid('myVid5', 'myVid1', 'myVid2', 'myVid3', 'myVid4', 'myVid6')">
-      <img src="images/6.jpg" ng-click="hidevid('myVid6', 'myVid1', 'myVid2', 'myVid3', 'myVid4', 'myVid5')"> -->
-      <div class="vids">
-      <img ng-repeat="img in videodb" ng-src="{{img.poster}}" ng-click="showVid(img)">
+        <h1> Client Testimonials </h1>
+        <div class="vids">
+          <img ng-repeat="vid in videodb" ng-src="{{vid.poster}}" ng-click="showVid(vid)">
+        </div>
       </div>
-      </div>
-
-
       <img class="x" src="images/startagain.png" ng-click="reset()"/>
     </div>
-
-
 
        <div class="footer">
         <img src="images/footer.png">
       </div>
   </body>
 
-
-
   <script src="vendor/angular.js" type="text/Javascript"></script>
   <script src="scripts/app.js" type="text/Javascript"></script>
 
 </html>
-

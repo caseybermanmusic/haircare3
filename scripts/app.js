@@ -256,86 +256,79 @@ app.controller('myCtrl', function($scope) {
     $scope.absolutefirst = false;
     $scope.testimonials = true;
     console.log($scope.testimonials, $scope.solu2p5);
-    $scope.myVid1 = true;
 
 
     var vid = document.getElementById("myVid1");
     vid.play();
     prevVid = vid;
-
-    // if (vid.autoplay = true) {
-    //   console.log("It's true, I knew it!")
-    // }
   };
-
 
   $scope.videodb = [
     {
       name:'first video',
       url:'videos/1.mp4',
-      vidKey:'a',
+      // vidKey:'a',
       idName:'myVid1',
       poster:'images/1.jpg'
     },
     {
       name:'first video',
       url:'videos/2.mp4',
-      vidKey:'b',
+      // vidKey:'b',
       idName:'myVid2',
       poster:'images/2.jpg'
     },
     {
       name:'first video',
       url:'videos/3.mp4',
-      vidKey:'c',
+      // vidKey:'c',
       idName:'myVid3',
       poster:'images/3.jpg'
     },
     {
       name:'first video',
       url:'videos/4.mp4',
-      vidKey:'d',
+      // vidKey:'d',
       idName:'myVid4',
       poster:'images/4.jpg'
     },
     {
       name:'first video',
       url:'videos/5.mp4',
-      vidKey:'e',
+      // vidKey:'e',
       idName:'myVid5',
       poster:'images/5.jpg'
     },
     {
       name:'first video',
       url:'videos/6.mp4',
-      vidKey:'f',
+      // vidKey:'f',
       idName:'myVid6',
       poster:'images/6.jpg'
     }
   ];
-  $scope.selectedVid = 'a';
 
-  $scope.hidevid = function(a, b, c, d, e, f) {
-    $scope[a] = true;
-    $scope[b] = false;
-    $scope[c] = false;
-    $scope[d] = false;
-    $scope[e] = false;
-    $scope[f] = false;
+  $scope.selectedVideo = $scope.videodb[0];
 
-    console.log("1: " + $scope.myVid1,"2: " + $scope.myVid2, $scope.myVid3, $scope.myVid4, $scope.myVid5, $scope.myVid6);
-  }
+  // $scope.selectedVid = 'a';
 
   var prevVid;
-  $scope.showVid = function(val) {
-    var thisElement = document.getElementById(val.idName);
-    thisElement.currentTime = 0;
-    if(prevVid) prevVid.pause();
-    $scope.selectedVid = val.vidKey;
+
+  $scope.showVid = function(video) {
+    $scope.selectedVideo = video;
+
+    var thisElement = document.getElementById("selectedVideo");
+    console.log(thisElement);
+    // var thisElement = video.url;
     thisElement.play();
-    prevVid = thisElement;
+    console.log(thisElement);
+
+    // var thisElement = document.getElementById(val.idName);
+    // thisElement.currentTime = 0;
+    // if(prevVid) prevVid.pause();
+    // $scope.selectedVid = val.vidKey;
+    // thisElement.play();
+    // prevVid = thisElement;
   }
-  
+
 });
-
-
