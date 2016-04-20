@@ -257,13 +257,13 @@ app.controller('myCtrl', function($scope) {
   };
 
   $scope.testi = function() {
-
     $scope.reset();
     $scope.absolutefirst = false;
     $scope.testimonials = true;
-    console.log($scope.testimonials, $scope.solu2p5);
 
+    $scope.selectedVideo = $scope.videodb[0];
     var vid = document.getElementById("clown");
+    vid.currentTime = 0;
     vid.play();
   };
 
@@ -314,32 +314,11 @@ app.controller('myCtrl', function($scope) {
 
   $scope.selectedVideo = $scope.videodb[0];
 
-  // $scope.selectedVid = 'a';
-
-  var prevVid;
-
   $scope.showVid = function(video) {
     $scope.selectedVideo = video;
-    // video.play();
     var thisElement = document.getElementById("clown");
     thisElement.onloadeddata = function() {
-      console.log("This is working apparently");
       thisElement.play();
     };
-    // var thisElement = document.getElementById(video.idName);
-
-    console.log(video);
-    console.log(video.name);
-    console.log(thisElement);
-
-    // thisElement.play();
-
-    // var thisElement = document.getElementById(val.idName);
-    // thisElement.currentTime = 0;
-    // if(prevVid) prevVid.pause();
-    // $scope.selectedVid = val.vidKey;
-    // thisElement.play();
-    // prevVid = thisElement;
-  }
-
+  };
 });

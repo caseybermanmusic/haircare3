@@ -394,6 +394,7 @@
 
 
     <div ng-show="testimonials">
+
       <div>
         <!-- id="{{selectedVideo.idName}}"  -->
         <video id="clown" ng-src="{{selectedVideo.url}}" controls></video>
@@ -401,6 +402,7 @@
 
       <div class="vid">
         <h1> Client Testimonials </h1>
+
         <div class="vids">
           <img ng-repeat="vid in videodb" ng-src="{{vid.poster}}" ng-click="showVid(vid)">
         </div>
