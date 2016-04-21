@@ -47,15 +47,6 @@ app.controller('myCtrl', function($scope) {
   $scope.solu4 = false;
   $scope.solu5 = false;
 
-  $scope.MyVid1 = false;
-  $scope.MyVid2 = false;
-  $scope.MyVid3 = false;
-  $scope.MyVid4 = false;
-  $scope.MyVid5 = false;
-  $scope.MyVid6 = false;
-
-
-
   // attempting to make function with two params
 
   $scope.first = function() {
@@ -248,9 +239,9 @@ app.controller('myCtrl', function($scope) {
     $scope.myVid4 = false;
     $scope.myVid5 = false;
     $scope.myVid6 = false;
+    console.log("rightio");
 
     var checkclown = document.getElementById("clown");
-
     if (!checkclown.paused == true) {
       checkclown.pause();
     };
@@ -261,11 +252,9 @@ app.controller('myCtrl', function($scope) {
     $scope.absolutefirst = false;
     $scope.testimonials = true;
 
-    $scope.selectedVideo = $scope.videodb[0];
-    var vid = document.getElementById("clown");
-    vid.currentTime = 0;
-    vid.play();
-  };
+    // $scope.selectedVideo = $scope.videodb[0];
+    $scope.showVid($scope.videodb[0]);
+    };
 
   $scope.videodb = [
     {
@@ -312,13 +301,25 @@ app.controller('myCtrl', function($scope) {
     }
   ];
 
-  $scope.selectedVideo = $scope.videodb[0];
+    var thisElement = document.getElementById("clown");
 
   $scope.showVid = function(video) {
     $scope.selectedVideo = video;
-    var thisElement = document.getElementById("clown");
     thisElement.onloadeddata = function() {
       thisElement.play();
     };
   };
+
+thisElement.addEventListener("ended", function() {
+  var nextvid = ($scope.videodb.indexOf($scope.selectedVideo) + 1);
+  if (nextvid < $scope.videodb.length) {
+    console.log("the index number of the next video object is " + nextvid + ", so it's video number " + (nextvid + 1));
+    $scope.$apply($scope.showVid($scope.videodb[nextvid]));
+  } else {
+    console.log("we are starting again");
+    $scope.absolutefirst = true;
+    $scope.testimonials = false;
+    $scope.$apply();
+};
+});
 });
