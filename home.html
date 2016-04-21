@@ -2,8 +2,8 @@
 <html ng-app="assign_8">
 
   <head>
-    <link rel="stylesheet" type="text/css"
-    href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body ng-class="{'white': !absolutefirst }" ng-controller="myCtrl">
@@ -20,26 +20,21 @@
       <h2 class="z" ng-click="testi()"> Testimonials </h2>
     </div>
   </div>
+      <!-- animated infinite SlideInRight -->
+
+    <div class="animated firstpageprompt cool" ng-show="vtrue">
 
 
-    <div class="firstpageprompt cool" ng-show="vtrue">
+      <!-- ^^ attempting to use css.animate ^^ -->
+
 
       <p>Are you a man or a woman?</p>
-
-    <div class="selection">
-
-      <!-- attempting to do ng-click with two params -->
-      <div ng-class="{ 'darkred': man }" ><a href="" ng-click= "select('man', 'woman')">Man</a></div>
-
-      <div ng-class="{ 'darkred': woman }"><a class="y" href="" ng-click= "select('woman', 'man')">Woman</a></div>
-
-
-      <img class="submitbutton a" src="images/submit.png" ng-show="button1show" ng-click="firstsubmit()"/>
-
+      <div class="selection">
+        <div ng-class="{ 'darkred': man }" ><a href="" ng-click= "select('man', 'woman')">Man</a></div>
+        <div ng-class="{ 'darkred': woman }"><a class="y" href="" ng-click= "select('woman', 'man')">Woman</a></div>
+        <img class="submitbutton a" src="images/submit.png" ng-show="button1show" ng-click="firstsubmit()"/>
+      </div>
     </div>
-    </div>
-
-
 
     <div class="secondpageprompt options" ng-show="vtrue2">
       <p>Which statement best descibes your hair loss?</p>
