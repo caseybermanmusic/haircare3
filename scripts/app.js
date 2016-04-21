@@ -1,5 +1,5 @@
 
-var app = angular.module("assign_8", []);
+var app = angular.module("assign_8", ["ngAnimate"]);
 // create controller for selecting option
 
 

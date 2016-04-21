@@ -15,9 +15,19 @@ body {
 	margin: 0;
 	background-image: url('../images/hair_bg.png');
 	background-size: cover;
-	background-repeat: no
+	background-repeat: no;
 
+}
+.ng-hide-add {
+    -webkit-animation: fadeOutLeftBig 0.4s;
+    display: block!important;
+    position: absolute;
+}
 
+.ng-hide-remove {
+    -webkit-animation: fadeInRightBig 0.4s;
+    position: absolute;
+}
 
 }
 
@@ -125,6 +135,15 @@ body {
 
 }
 
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
 
 
 
@@ -519,6 +538,14 @@ header and footer fixed images
 
 }
 
+/*.absolutefirst.ng-hide-add {
+    -webkit-animation: fadeOutLeftBig 0.4s;
+    display: block!important;
+}
+.absolutefirst.ng-hide-remove {
+    -webkit-animation: fadeInLeftBig 0.4s;
+}*/
+
 
 
 .vid h1 {
@@ -543,7 +570,7 @@ header and footer fixed images
 
 /*attempting to add animations*/
 
-.ng-show-add {
+/*.ng-show-add {
 	-webkit-animation: slideInRight 2.5s;
 	animation: slideInRight 2.5s;
 	display: block !important;
@@ -553,9 +580,11 @@ header and footer fixed images
 	-webkit-animation: slideInRight 2.5s;
 	animation: slideInRight 2.5s;
 }
-
+*/
 .x {
 	margin: 19em 19em;
+	margin: 7em 19em;
+
     text-align: center;
 }
 

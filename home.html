@@ -13,21 +13,15 @@
         <img src="images/header.jpg">
      </div>
 
-     <div class="first" ng-show="absolutefirst">
+     <div class="first fade" ng-show="absolutefirst">
       <h1>What Hair Loss Solution is Right For Me?</h1>
       <p>Discover what hair loss solutions are best for your specific type of hair loss</p>
       <h2 style="margin: 1em 9em" class=" r" ng-click="first()">Get Started Now</h2>
       <h2 class="z" ng-click="testi()"> Testimonials </h2>
     </div>
-  </div>
       <!-- animated infinite SlideInRight -->
 
-    <div class="animated firstpageprompt cool" ng-show="vtrue">
-
-
-      <!-- ^^ attempting to use css.animate ^^ -->
-
-
+    <div class="fade firstpageprompt cool" ng-show="vtrue">
       <p>Are you a man or a woman?</p>
       <div class="selection">
         <div ng-class="{ 'darkred': man }" ><a href="" ng-click= "select('man', 'woman')">Man</a></div>
@@ -198,7 +192,7 @@
       <h1> Scalp Wellness </h1>
       <h2> Healthy hair begins with a healthy scalp. Seasonally, due to environmental  changes and the internal composition of the body the scalp is affected. Many clients suffering from psoriasis, dandruff, oiliness, dryness and sensitivity can benefit from scalp treatments.</h2>
 
-      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client’s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
+      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client&#8217;s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
 
       <img src="images/scalp_wellness.jpg">
       <p class="r" ng-click="back2()">Go back</p>
@@ -227,7 +221,7 @@
 
       <img src="images/hair2.jpg">
 
-      <h2>The grafting procedure is virtually undetectable. The style, color and texture is matched tothe client’s existing hair and blended to create a fuller and thicker appearance. We have helped change thousands of client’s lives over the past 48 years with our hair enhancement services.</h2>
+      <h2>The grafting procedure is virtually undetectable. The style, color and texture is matched tothe client’s existing hair and blended to create a fuller and thicker appearance. We have helped change thousands of client&#8217;s lives over the past 48 years with our hair enhancement services.</h2>
       <p class="r" ng-click="back3()">Go Back</p>
       <img class="h" src="images/startagain.png" ng-click="reset()"/>
 
@@ -330,7 +324,7 @@
 
       <h2> Hair enhancement is an option that integrates real human hair using a process that is non-surgical and non-invasive. Clients who have male pattern baldness, or women who have lost a substantial amount of hair due to genetics or health conditions causing permanent baldness, can benefit from our hair enhancement services.</h2>
       <img src="images/hair2.jpg">
-      <h2>The grafting procedure is virtually undetectable. The style, color and texture is matched tothe client’s existing hair and blended to create a fuller and thicker appearance. We have helped change thousands of client’s lives over the past 48 years with our hair enhancement services.</h2>
+      <h2>The grafting procedure is virtually undetectable. The style, color and texture is matched tothe client’s existing hair and blended to create a fuller and thicker appearance. We have helped change thousands of client&#8217;s lives over the past 48 years with our hair enhancement services.</h2>
       <p ng-click="back4()">Go Back</p>
       <img class="h" src="images/startagain.png" ng-click="reset()"/>
     </div>
@@ -344,7 +338,7 @@
       <h1> Scalp Wellness </h1>
       <h2> Healthy hair begins with a healthy scalp. Seasonally, due to environmental  changes and the internal composition of the body the scalp is affected. Many clients suffering from psoriasis, dandruff, oiliness, dryness and sensitivity can benefit from scalp treatments.</h2>
 
-      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client’s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
+      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client&#8217;s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
 
       <img src="images/scalp_wellness.jpg">
       <p ng-click="back4()">Go Back</p>
@@ -379,7 +373,7 @@
 
       <h1> Scalp Wellness </h1>
       <h2> Healthy hair begins with a healthy scalp. Seasonally, due to environmental  changes and the internal composition of the body the scalp is affected. Many clients suffering from psoriasis, dandruff, oiliness, dryness and sensitivity can benefit from scalp treatments.</h2>
-      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client'  s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
+      <h2>We have created a solution to increase volume, stop excessive hair loss and restore your scalp health. Our scalp treatments and home care systems are customized to each client&#8217;s personal needs. We are happy to style and cut your hair after your scalp treatment leaving your hair feeling refreshed and rejuvenated.  </h2>
 
       <img src="images/scalp_wellness.jpg">
       <p ng-click="back5()">Go Back</p>
@@ -411,6 +405,8 @@
   </body>
 
   <script src="vendor/angular.js" type="text/Javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
   <script src="scripts/app.js" type="text/Javascript"></script>
+
 
 </html>
