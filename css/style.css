@@ -10,6 +10,10 @@
 	src: url('../fonts/HelveticaNeueLTPro-Md 3.otf') format("opentype");
 }
 
+html, body{
+	/*overflow: hidden;*/
+}
+
 body {
 
 	margin: 0;
@@ -18,19 +22,18 @@ body {
 	background-repeat: no;
 
 }
-.ng-hide-add {
-    -webkit-animation: fadeOutLeftBig 0.4s;
+/*.first.ng-hide-add {
+    -webkit-animation: slideOutLeft 1s;
     display: block!important;
     position: absolute;
+    width: 100%;
 }
 
-.ng-hide-remove {
-    -webkit-animation: fadeInRightBig 0.4s;
+.first.ng-hide-remove {
+    -webkit-animation: slideInRight 1s;
     position: absolute;
-}
-
-}
-
+    width: 100%;
+}*/
 
 .headers3 {
 
@@ -586,6 +589,20 @@ header and footer fixed images
 	margin: 7em 19em;
 
     text-align: center;
+}
+
+.ng-hide-add-active {
+    -webkit-animation: slideOutLeft 1s;
+    display: block!important;
+    position: absolute;
+    width: 100%;
+}
+
+.ng-hide-remove-active {
+    -webkit-animation: slideInRight 1s;
+    position: absolute;
+    width: 100%;
+    display: block;
 }
 
 
